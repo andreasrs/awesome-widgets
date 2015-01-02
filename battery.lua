@@ -40,8 +40,8 @@ battery.add = function(wibox)
         mybatterypanel:set_text(statusBattery)
     end)
 
-    mybatterypanel_t = awful.tooltip({
-        objects = { mybatterypanel }, timer_function = function() return execute_command("acpi") end})
+    -- mybatterypanel_t = awful.tooltip({
+    --    objects = { mybatterypanel }, timer_function = function() return execute_command("acpi") end})
 
    batterytimer:start()
 end
